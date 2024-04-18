@@ -2,13 +2,7 @@
 Command line tools for DYMO LabelWriter USB. !Windows operation hasn't been tested!
 This is a stripped down verion of the project dymon by minlux https://github.com/minlux/dymon/tree/master.
 
-![dymon_srv](doc/lw.jpg)
-
 This project implements `dymon_pbm` which allows printing of labels from command line.
-
-![dymon_srv](doc/webif.png)
-
-
 
 ## Intro
 To automate the calibration process and put a QR code with a link to the calibration results on the device. 
