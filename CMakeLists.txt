@@ -3,8 +3,7 @@ project(dymon)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=gnu++17")
 
 include_directories(
-   libs/cjson
-   src/barcode
+
    src/bitmap
    src/bitmap/fonts
    src/dymon
@@ -26,11 +25,9 @@ endif()
 
 #print bitmap-files from command line
 add_executable(dymon_pbm
-  libs/cjson/cJSON.c
   src/bitmap/bitmap.cpp
   src/bitmap/glyphIterator.cpp
   src/bitmap/utf8decoder.cpp
-  src/barcode/barcodeEan8.cpp
   src/dymon/dymon.cpp
   ${dymon_x}
   src/main_dymon_pbm.cpp
